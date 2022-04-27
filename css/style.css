@@ -60,19 +60,29 @@ img {
     clip-path: inset(50%);
     margin: -1px;
   }
+  .section {
+      padding-top: 94px;
+      padding-bottom: 94px;
+  }
 /* header */
 .header .container{
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: ;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-nav {
     display: flex;
 }
+.header-link {
+    display: inline-block;
+    padding: 32px 0;
+}
 .header-list {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
+
+    align-items: center;
 }
 .header-item:not(:last-child) {
     margin-right: 50px;
@@ -106,7 +116,9 @@ img {
 }
 
 .header-contacts{
-    color: var(--primarly-gray-color)
+    color: var(--primarly-gray-color);
+    display: inline-block;
+    padding: 32px 0;
 }
 .header-contacts:hover,
 .header-contacts:focus,
@@ -141,9 +153,7 @@ img {
 }
 .hero{
     background-color:var(--hero-color) ;
-    padding-top: 200px;
-    padding-bottom: 280px;
-    margin-bottom: 94px;
+    padding: 200px 0;
     text-align: center;
 }
 .hero-title {
@@ -162,22 +172,30 @@ img {
 }
 
 /* description */
+.description {
+    padding: 94px 0;
+}
 .description-list {
     display: flex;
 }
+.description-item {
+    width: 270px;
+}
+.description-item:not(:last-child) {
+    margin-right: 30px;
+}
 .description-title{
-    font-size: 18px;
-    line-height: 1,14;
+    font-size: 14px;
+    line-height: 1.14;
     text-transform: uppercase;
     color: var(--primarly-black-color);
     margin-bottom: 10px;
 }
 .description-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.71;
     color: var(--primarly-gray-color);
-    margin-top: 10px;
 }
 
 .description-text {
@@ -186,7 +204,8 @@ img {
 
 /* title */
 .about {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 0;
 }
 .about-list {
     display: flex;
@@ -197,8 +216,7 @@ img {
     line-height: 42px;
     text-align: center;
     color: var(--primarly-black-color);
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
 }
 .about-item + .about-item {
@@ -207,7 +225,6 @@ img {
 /* team */
 .team{
     background-color: #F5F4FA;
-    padding-top: 94px;
 }
 .team-title {
     font-weight: 700;
@@ -225,15 +242,13 @@ img {
     font-size: 16px;
     line-height: 1.18;
     color: var(--primarly-black-color);
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .team-role {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.18px;
+    line-height: 1.18;
     color: var(--primarly-gray-color);
-    padding-top: 10px;
-    padding-bottom: 30px;
 }
 .team-item {
     flex-basis: calc((100% - 120px)/3);
@@ -244,7 +259,6 @@ img {
 }
 .team-list{
     display: flex;
-    padding-bottom: 94px;
     margin-left: -30px;
 }
 .team-text {
@@ -271,7 +285,7 @@ img {
     font-family:inherit;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.71px;
+    line-height: 1.71;
     color: var(--primarly-white-color)
 }
 .footer-contacts,
@@ -279,7 +293,7 @@ img {
     font-family:inherit;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.71px;
+    line-height: 1.71;
     color: var(--primarly-gray-color);
 }
 .footer-contacts {
