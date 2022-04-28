@@ -177,6 +177,7 @@ img {
 }
 .description-list {
     display: flex;
+    align-items: center;
 }
 .description-item {
     width: 270px;
@@ -197,11 +198,6 @@ img {
     line-height: 1.71;
     color: var(--primarly-gray-color);
 }
-
-.description-text {
-    margin-right: 30px;
-}
-
 /* title */
 .about {
     padding-bottom: 94px;
@@ -210,7 +206,7 @@ img {
 .about-list {
     display: flex;
 }
-.about-title {
+.section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -225,14 +221,6 @@ img {
 /* team */
 .team{
     background-color: #F5F4FA;
-}
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: var(--primarly-black-color);
-    margin-bottom: 50px;
 }
 .team-item {
     align-items: center;
@@ -268,8 +256,7 @@ img {
 /* footer */
 .footer {
     background-color: var(--hero-color);
-    height: 252px;
-    padding-top: 94px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 .footer-logo {
@@ -279,7 +266,11 @@ img {
     font-size: 26px;
     line-height: 31px;
     color:var(--accent-color);
-    margin-bottom: 200px;
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-list li:not(:last-child) {
+    margin-bottom: 9px;
 }
 .footer-adress{
     font-family:inherit;
@@ -318,7 +309,6 @@ img {
 }
 .portfolio-btn, .current-btn-portfolio {
     font-family: inherit;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: none;
     margin-right: 8px;
@@ -328,6 +318,12 @@ img {
     font-size: 16px;
     line-height: 26px;
     cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--primarly-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list-btn {
     display: flex;
@@ -352,8 +348,16 @@ img {
     padding: 20px 24px;
 }
 .portfolio-title {
-    margin-bottom: 20px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 .portfolio-text {
     color: var(--primarly-gray-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
